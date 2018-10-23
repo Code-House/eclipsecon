@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.5.0" name="maven-osgi-demo">
+
+    <repository>mvn:org.apache.cxf.karaf/apache-cxf/${cxf.version}/xml/features</repository>
+
+    <feature name="book-service" version="${project.version}">
+        <feature>scr</feature>
+        <feature>cxf-jaxrs</feature>
+        <feature>aries-blueprint</feature>
+    </feature>
+
+</features>

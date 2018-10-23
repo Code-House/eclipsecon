@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.code-house.eclipsecon.mvnosgi</groupId>
+        <artifactId>web</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.code-house.eclipsecon.mvnosgi.web</groupId>
+    <artifactId>core</artifactId>
+    <packaging>bundle</packaging>
+
+    <name>Maven + OSGi | Web | Core</name>
+    <description>Web/rest interface implementation.</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.code-house.eclipsecon.mvnosgi</groupId>
+            <artifactId>api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.code-house.eclipsecon.mvnosgi.web</groupId>
+            <artifactId>api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
